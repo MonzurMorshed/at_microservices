@@ -18,7 +18,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "users:seeder": "ts-node src/user/user.seeder.ts"
   },
   "dependencies": {
     "@nestjs/class-transformer": "^0.4.0",
@@ -30,7 +31,10 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "typeorm": "^0.3.6"
+    "typeorm": "^0.3.6",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/faker": "^5.5.3",
+    "faker": "^5.5.3"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
